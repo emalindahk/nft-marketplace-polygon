@@ -2,15 +2,13 @@ import React, { useState, useEffect } from "react";
 import  Layout  from "../components/Layout";
 
 import { ethers } from "ethers"
-import { create as ipfsHttpClient } from "ipfs-http-client";
 import axios from 'axios';
 import Web3Modal from 'web3modal';
-import {useRouter } from "next/router"
 
 import {nftaddress, nftmarketaddress} from '../config.js';
 
-import NFT from "../artifacts/contracts/NFT.sol/NFT.json"
-import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json"
+import NFT from "../abi/NFT.json"
+import Market from "../abi/NFTMarket.json"
 
 function MyAssets() {
     const [nfts, setNfts] = useState([]);
