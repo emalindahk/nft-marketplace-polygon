@@ -11,7 +11,7 @@ module.exports = {
     },
     mumbai: {
       url:`https://polygon-mumbai.g.alchemy.com/v2/${projectId}`,
-      accounts: [privateKey]
+      accounts: `${process.env.PRIVATE_KEY}`
     },
     mainnet: {
       url:`to be done`,
